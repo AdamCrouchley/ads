@@ -21,3 +21,9 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+.DS_Store
+/database/*.sqlite
+CURSOR-BRIEF.md
+_README-receiver.md
+_routes-snippet.php
