@@ -13,6 +13,7 @@ class ReceivedEvent extends Model
         'value_amount', 'value_currency', 'event_occurred_at',
         'source_ip', 'received_at',
         'processing_status', 'processed_at', 'processing_error', 'processing_attempts',
+        'google_ads_resource_name', 'last_upload_attempt_at', 'upload_response_summary',
     ];
 
     protected $casts = [
@@ -20,6 +21,8 @@ class ReceivedEvent extends Model
         'event_occurred_at' => 'datetime',
         'received_at' => 'datetime',
         'processed_at' => 'datetime',
+        'last_upload_attempt_at' => 'datetime',
+        'upload_response_summary' => 'array',
         'value_amount' => 'decimal:2',
     ];
 
