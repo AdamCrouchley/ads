@@ -20,6 +20,11 @@ class RevenueByBrandWidget extends BaseWidget
     protected int | string | array $columnSpan = 'full';
     protected static ?string $heading = 'Revenue by brand · this month';
 
+    public function getTableRecordKey(\Illuminate\Database\Eloquent\Model $record): string
+    {
+        return (string) $record->brand;
+    }
+
     public function table(Table $table): Table
     {
         return $table
